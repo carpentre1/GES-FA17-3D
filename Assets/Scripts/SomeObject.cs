@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SomeObject : MonoBehaviour, IActivatable {
+
     public void DoActivate()
     {
         throw new System.NotImplementedException();
