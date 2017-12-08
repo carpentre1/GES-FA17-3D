@@ -48,7 +48,7 @@ public class Door : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.E) && timeLeft == 0f)
+        if (Input.GetButtonDown("Fire1") && timeLeft == 0f)
         {
             CheckDoor();
         }
