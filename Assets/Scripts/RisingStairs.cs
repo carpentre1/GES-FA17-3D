@@ -23,10 +23,12 @@ public class RisingStairs : MonoBehaviour, IActivatable
 
     public void DoActivate()
     {
+        Debug.Log(theStairs.name);
         if (activated) return;
         if(theStairs.name == "FinalStairs")//if these are the second set of stairs that lead to the top of the mountain
         {
             theStairs.transform.position = new Vector3(theStairs.transform.position.x, theStairs.transform.position.y + 6, theStairs.transform.position.z);//shift them up into the air by 6
+            Debug.Log("y");
         }
         else
         {
